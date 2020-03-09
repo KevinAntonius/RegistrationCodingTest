@@ -1,0 +1,2 @@
+# RegistrationCodingTest
+For test purpose
