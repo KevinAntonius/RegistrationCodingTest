@@ -1,0 +1,108 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+#registration{
+  margin: auto;
+  width: 80%;
+}
+
+.regcontainer .header #header-title, .regcontainer .header .alert{
+  width: 50%;
+  float: left;
+}
+
+input[type=text], input[type=email], input[type=date]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=date]{
+  margin: 5px 0;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=date]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.gender-radio{
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+}
+
+.gender-radio .choices{
+  width: 100%;
+}
+
+.gender-radio .choices div{
+  width: 50%;
+  float: left;
+}
+
+button {
+  background-color: #7733ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.regcontainer, .logincontainer{
+  padding: 16px;
+}
+
+.logincontainer{
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  #register {
+     width: 100%;
+  }
+}
+
+.alert {
+  padding: 0 20px;
+  background-color: #f44336;
+  color: white;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

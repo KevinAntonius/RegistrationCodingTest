@@ -1,0 +1,56 @@
+{{define "register"}}
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/styles/register.css">
+		<meta charset="UTF-8">
+		<title>Registration</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/static/scripts/register.js"></script>
+	</head>
+
+	<body>
+		<div id="registration">
+			<form action="/api/register" method="post" style="border:1px solid #ccc">
+				<div class="regcontainer">
+					<div class="header">
+						<h1 id="header-title">Registration</h1>
+						<div class="alert">
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+							<p class="message"></p>
+						</div>  
+					</div>
+				  	<input type="text" id="mobile" name="mobile" placeholder="Mobile number" required>
+					<input type="text" id="fname" name="fname" placeholder="First name"required>
+					<input type="text" id="lname" name="lname" placeholder="Last name"required>
+					<label for="birthdate">Date of birth</label>
+					<br>
+					<input type="date" id="birthdate" name="birthdate">
+					<br>
+					<div class="gender-radio">
+						<!-- <label for="gender">Gender</label> -->
+						<div class="choices">
+							<div>
+								<input type="radio" id="male" name="gender" value="male">
+								<label for="male">Male</label>
+							</div>
+							<div>
+								<input type="radio" id="female" name="gender" value="female">
+								<label for="female">Female</label><br>
+							</div>
+						</div>
+					</div>
+					<input type="email" id="email" name="email" placeholder="Email"required>
+					<div class="clearfix">
+						<button type="submit" id="registerbtn">Register</button>
+					</div>
+				</div>
+				<div class="logincontainer">
+					<button id="loginbtn">Login</button>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+{{end}}
